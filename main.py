@@ -11,8 +11,10 @@ def hole_wetter(stadt):
         url = f"https://wttr.in/{stadt}?format=j1"
         with urllib.request.urlopen(url, timeout=5) as response:
             data = json.loads(response.read().decode())
-'da muss noch etwas verbessert werden'
+
+        #da muss noch etwas verbessert werden'
         aktuell = data['current_condition'][0]
+        # Hier müsste etwas passieren
         temp = aktuell['temp_C']
         beschreibung = aktuell['lang_de'][0]['value'] if 'lang_de' in aktuell else aktuell['weatherDesc'][0]['value']
 
@@ -120,3 +122,4 @@ begruessen_btn.pack(pady=20)
 root.bind('<Return>', lambda event: begruesse_user())
 
 root.mainloop()
+
