@@ -21,6 +21,8 @@ def hole_wetter(stadt):
     except:
         return "Wetter konnte nicht abgerufen werden"
 
+def test():
+    pass
 
 def hole_zitat():
     zitate = [
