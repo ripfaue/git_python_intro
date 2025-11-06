@@ -13,6 +13,7 @@ def hole_wetter(stadt):
             data = json.loads(response.read().decode())
 
         aktuell = data['current_condition'][0]
+        # Hier müsste etwas passieren
         temp = aktuell['temp_C']
         beschreibung = aktuell['lang_de'][0]['value'] if 'lang_de' in aktuell else aktuell['weatherDesc'][0]['value']
 
