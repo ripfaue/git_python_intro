@@ -6,7 +6,6 @@ import random
 
 
 def hole_wetter(stadt):
-
     try:
         url = f"https://wttr.in/{stadt}?format=j1"
         with urllib.request.urlopen(url, timeout=5) as response:
@@ -24,7 +23,6 @@ def hole_wetter(stadt):
 
 
 def hole_zitat():
-
     zitate = [
         "Jeder Tag ist ein neuer Anfang!",
         "Glaube an dich selbst und alles ist möglich.",
