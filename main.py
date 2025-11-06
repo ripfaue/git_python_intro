@@ -24,6 +24,9 @@ def hole_wetter(stadt):
 def test():
     pass
 
+def new_method(a, b , c):
+    pass
+
 def hole_zitat():
     zitate = [
         "Jeder Tag ist ein neuer Anfang!",
