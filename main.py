@@ -1,1 +1,3 @@
-Hallo :)
+def main():
+    pass
+
