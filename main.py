@@ -55,6 +55,8 @@ def begruesse_user():
     wetter = hole_wetter(ort)
     zitat = hole_zitat()
 
+    
+
     begruessung = f"""
 Hallo {name}! 
 
